@@ -1,0 +1,122 @@
+/* ============================================================
+   Zombie Survival — Thème sombre v2
+   Design amélioré : couleurs, ombres, contrastes
+   Auteur : Elmehdi Eddareiy
+   ============================================================ */
+
+/* ── Root ───────────────────────────────────────────────────── */
+.root {
+    -fx-background-color: #050805;
+    -fx-font-family: "Arial";
+    -fx-font-smoothing-type: gray;
+}
+
+/* ── Boutons ─────────────────────────────────────────────────── */
+.button {
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.button:hover {
+    -fx-opacity: 0.92;
+}
+.button:pressed {
+    -fx-opacity: 0.75;
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}
+
+/* ── Champs de saisie ────────────────────────────────────────── */
+.text-field, .password-field {
+    -fx-background-color: #0f0f1a;
+    -fx-text-fill: #ddddee;
+    -fx-prompt-text-fill: #555566;
+    -fx-border-color: #333355;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 9;
+    -fx-font-size: 14px;
+}
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #5555bb;
+    -fx-effect: dropshadow(gaussian, rgba(80,80,200,0.3), 8, 0, 0, 0);
+}
+
+/* ── TableView (classement) ──────────────────────────────────── */
+.table-view {
+    -fx-background-color: #0a0a0f;
+    -fx-border-color: #441100;
+    -fx-border-width: 1.5;
+}
+.table-view .column-header-background {
+    -fx-background-color: #1a0800;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #ffaa00;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER;
+}
+.table-row-cell {
+    -fx-background-color: #0d0d12;
+    -fx-text-fill: #cccccc;
+    -fx-border-color: transparent;
+}
+.table-row-cell:odd {
+    -fx-background-color: #111118;
+}
+.table-row-cell:selected {
+    -fx-background-color: #2a0a00;
+}
+.table-row-cell:hover {
+    -fx-background-color: #1a1a28;
+}
+.table-cell {
+    -fx-text-fill: #cccccc;
+    -fx-alignment: center;
+    -fx-padding: 6;
+}
+
+/* ── ScrollPane ──────────────────────────────────────────────── */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-padding: 0;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-bar {
+    -fx-background-color: #0d0d0d;
+    -fx-pref-width: 8;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #441100;
+    -fx-background-radius: 4;
+}
+.scroll-bar .thumb:hover {
+    -fx-background-color: #882200;
+}
+.scroll-bar .track {
+    -fx-background-color: #0d0d0d;
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0;
+}
+
+/* ── Labels ──────────────────────────────────────────────────── */
+.label {
+    -fx-text-fill: #cccccc;
+}
+
+/* ── Tooltip ─────────────────────────────────────────────────── */
+.tooltip {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: white;
+    -fx-border-color: #554400;
+    -fx-border-radius: 4;
+    -fx-font-size: 12px;
+}
